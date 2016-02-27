@@ -1,5 +1,5 @@
 <?php
-
+use App\User;
 /*
 |--------------------------------------------------------------------------
 | Application Routes
@@ -12,7 +12,7 @@
 */
 
 $app->get('/', function () use ($app) {
-    return ["JSON"];
+    return User::all();
 });
 
 //Auth
